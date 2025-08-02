@@ -1,0 +1,14 @@
+{
+  "main-page.title": "Main Page",
+  "main-page.loading": "Loading",
+  "server-spells.remove": "Remove",
+  "server-spells.add": "Add",
+  "selected-spells.remove": "Remove",
+  "concentration-panel.title": "Concentration",
+  "concentration-panel.end": "End concentration",
+  "spell-slot.level": "Level",
+  "spell-slot.use": "Use",
+  "spell-slot.restore": "Restore",
+  "spell-card.level": "Level",
+  "spell-card.concentration": "Concentration"
+}

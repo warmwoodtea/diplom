@@ -1,16 +1,21 @@
-import React from "react";
-import { ConcentrationPanelProps } from "../types/spellTypes"; //дописать в spellTypes.ts
+import { type FC } from "react";
+import { useTranslate } from "../hooks";
 
-export const ConcentrationPanel: React.FC<ConcentrationPanelProps> = ({
-  activeSpell,
-  onClear,
-}) => {
-  if (!activeSpell) return null;
+type Props = {
+  name?: string;
+  onClear: () => void;
+};
+
+export const ConcentrationPanel: FC<Props> = ({ name, onClear }) => {
+  const translate = useTranslate();
+
+  if (!name) return null;
+
   return (
     <div className="border p-2 bg-yellow-50">
-      <strong>🌀 Concentrating on:</strong> {activeSpell.name}
+      <strong>{translate("concentration-panel.title")}</strong> {name}
       <button onClick={onClear} className="ml-4 text-red-500">
-        End Concentration
+        {translate("concentration-panel.end")}
       </button>
     </div>
   );

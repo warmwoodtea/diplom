@@ -1,0 +1,19 @@
+.holder {
+  width: 100%;
+  height: 100%;
+
+  padding: 10px;
+}
+
+.selectors {
+  display: flex;
+  gap: 10px;
+
+  > div:first-child {
+    flex-grow: 3;
+  }
+
+  > div:last-child {
+    flex-grow: 1;
+  }
+}
