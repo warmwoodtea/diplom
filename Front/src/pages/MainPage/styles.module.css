@@ -3,6 +3,9 @@
   height: 100%;
 
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .selectors {
@@ -16,4 +19,10 @@
   > div:last-child {
     flex-grow: 1;
   }
+}
+
+.btnHolder {
+  margin-top: auto;
+  display: flex;
+  justify-content: end;
 }

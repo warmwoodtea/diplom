@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
+
+import { Button } from "../../components";
 import { useTranslate } from "../../hooks";
 import { SelectedSpells, ServerSpells } from "./components";
-
 import styles from "./styles.module.css";
 
 export const MainPage = () => {
@@ -15,10 +16,10 @@ export const MainPage = () => {
         <ServerSpells />
         <SelectedSpells />
       </div>
-      <div>
-        <button onClick={() => navigate("/battle")}>
+      <div className={styles.btnHolder}>
+        <Button onClick={() => navigate("/battle")}>
           {translate("main-page.start-battle")}
-        </button>
+        </Button>
       </div>
     </div>
   );

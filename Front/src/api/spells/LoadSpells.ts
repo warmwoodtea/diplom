@@ -8,6 +8,7 @@ export type Spell = {
   duration: string;
   components: string;
   description: string;
+  atHigherLevels: string;
   concentration: boolean;
 };
 
@@ -25,6 +26,7 @@ export const LoadSpells = () =>
         school: "23 им М. Козыбаева",
         concentration: false,
         components: "asdasd",
+        atHigherLevels: "asdasd",
       },
       {
         id: 1,
@@ -37,6 +39,7 @@ export const LoadSpells = () =>
         school: "23 им М. Козыбаева",
         concentration: false,
         components: "asdasd",
+        atHigherLevels: "asdasd",
       },
       {
         id: 2,
@@ -49,6 +52,7 @@ export const LoadSpells = () =>
         school: "23 им М. Козыбаева",
         concentration: false,
         components: "asdasd",
+        atHigherLevels: "asdasd",
       },
     ]);
   });

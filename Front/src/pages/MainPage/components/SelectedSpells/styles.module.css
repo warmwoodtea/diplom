@@ -2,4 +2,21 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: "Times New Roman", serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+
+  /* Эффекты перехода */
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }

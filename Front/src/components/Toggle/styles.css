@@ -1,0 +1,70 @@
+.spell-concentration-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+.spell-concentration-container.active {
+  background: #f0f8ff;
+  border: 1px solid #4caf50;
+}
+
+.spell-concentration-container.inactive {
+  background: transparent;
+  border: 1px solid #ccc;
+}
+
+.concentration-switch {
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  position: relative;
+  transition: background 0.3s;
+}
+
+.concentration-switch.active {
+  background: #4caf50;
+}
+
+.concentration-switch.inactive {
+  background: #f44336;
+}
+
+.switch-slider {
+  position: absolute;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  transition: left 0.3s;
+}
+
+.switch-slider.active {
+  left: 22px;
+}
+
+.switch-slider.inactive {
+  left: 2px;
+}
+
+.status-text {
+  font-size: 0.9em;
+}
+
+.status-text.active {
+  color: #4caf50;
+}
+
+.status-text.inactive {
+  color: #f44336;
+}
+
+.hidden-checkbox {
+  display: none;
+}

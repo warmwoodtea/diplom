@@ -1,4 +1,39 @@
 .holder {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  border: 1px solid rgba(252, 211, 153, 0.3);
+  transition: all 0.3s ease;
+  background-image: url("/img/paper.avif");
+  background-blend-mode: multiply;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.holder:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.holder h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff4ed;
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 0.025em;
+  margin: 0;
+}
+
+.holder p {
+  background-color: rgba(83, 59, 41, 0.5);
+  color: #fdefde;
+  padding: 0.25rem 0.75rem;
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: 500;
 }

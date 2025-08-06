@@ -1,4 +1,4 @@
-import { SpellCard } from "../../../../components";
+import { Button, SpellCard } from "../../../../components";
 import { useSpells, useTranslate } from "../../../../hooks";
 
 import styles from "./styles.module.css";
@@ -14,9 +14,9 @@ export const SelectedSpells = () => {
 
         return (
           <SpellCard key={spell.id} chosen={selected} spell={spell}>
-            <button onClick={() => remove(spell)}>
+            <Button onClick={() => remove(spell)}>
               {translate("selected-spells.remove")}
-            </button>
+            </Button>
           </SpellCard>
         );
       })}

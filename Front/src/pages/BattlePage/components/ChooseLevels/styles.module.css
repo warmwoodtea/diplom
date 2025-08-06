@@ -1,0 +1,28 @@
+.holder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.levels {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.level {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.level > div:last-child {
+  display: flex;
+  gap: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}

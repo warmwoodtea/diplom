@@ -1,6 +1,7 @@
 import React, { type FC } from "react";
 import type { Spell } from "../../../api";
 import { useTranslate } from "../../../hooks";
+import { Paragraph } from "../../Paragraph";
 
 import cs from "classnames";
 
@@ -27,9 +28,27 @@ export const SpellCard: FC<Props> = ({ spell, chosen, children }) => {
       )}
     >
       <h3 className="text-lg font-bold">{spell.name}</h3>
-      <p className="text-sm">
-        {translate("spell-card.level")} {spell.level} — {spell.school}
-      </p>
+      <Paragraph>{spell.school}</Paragraph>/
+      <Paragraph>
+        {translate("spell-card.level")} {spell.level}
+      </Paragraph>
+      <Paragraph>
+        {translate("spell-card.duration")} {spell.duration}
+      </Paragraph>
+      <Paragraph>
+        {translate("spell-card.casting-time")}
+        {spell.castingTime}
+      </Paragraph>
+      <Paragraph>
+        {translate("spell-card.components")} {spell.components}
+      </Paragraph>
+      <Paragraph>
+        {translate("spell-card.range")} {spell.range}
+      </Paragraph>
+      <Paragraph>{spell.description}</Paragraph>
+      <Paragraph>
+        {translate("spell-card.at-higher-levels")} {spell.atHigherLevels}
+      </Paragraph>
       {spell.concentration && (
         <span className="text-xs text-red-500">
           {translate("spell-card.concentration")}

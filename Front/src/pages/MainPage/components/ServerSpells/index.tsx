@@ -1,4 +1,4 @@
-import { SpellCard } from "../../../../components";
+import { Button, SpellCard } from "../../../../components";
 import { useLoadSpells, useSpells, useTranslate } from "../../../../hooks";
 
 import styles from "./styles.module.css";
@@ -18,14 +18,14 @@ export const ServerSpells = () => {
         return (
           <SpellCard key={spell.id} chosen={selected} spell={spell}>
             {selected && (
-              <button onClick={() => remove(spell)}>
+              <Button onClick={() => remove(spell)}>
                 {translate("server-spells.remove")}
-              </button>
+              </Button>
             )}
             {!selected && (
-              <button onClick={() => add(spell)}>
+              <Button onClick={() => add(spell)}>
                 {translate("server-spells.add")}
-              </button>
+              </Button>
             )}
           </SpellCard>
         );
