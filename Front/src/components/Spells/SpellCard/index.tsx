@@ -1,10 +1,9 @@
+import cs from "classnames";
 import React, { type FC } from "react";
+
 import type { Spell } from "../../../api";
 import { useTranslate } from "../../../hooks";
 import { Paragraph } from "../../Paragraph";
-
-import cs from "classnames";
-
 import styles from "./styles.module.css";
 
 type Props = {
@@ -24,11 +23,11 @@ export const SpellCard: FC<Props> = ({ spell, chosen, children }) => {
         "p-2",
         "rounded",
         "shadow-sm",
-        chosen ? "bg-purple-100" : "bg-white"
+        chosen ? "bg-purple-100" : "bg-white",
       )}
     >
       <h3 className="text-lg font-bold">{spell.name}</h3>
-      <Paragraph>{spell.school}</Paragraph>/
+      <Paragraph>{spell.school}</Paragraph>
       <Paragraph>
         {translate("spell-card.level")} {spell.level}
       </Paragraph>

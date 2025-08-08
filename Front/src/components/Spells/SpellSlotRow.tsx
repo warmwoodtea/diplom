@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useTranslate } from "../../hooks";
 
 type Props = {

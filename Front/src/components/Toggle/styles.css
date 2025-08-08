@@ -9,7 +9,7 @@
   transition: all 0.3s ease;
 }
 
-.spell-concentration-container.active {
+/*.spell-concentration-container.active {
   background: #f0f8ff;
   border: 1px solid #4caf50;
 }
@@ -17,7 +17,7 @@
 .spell-concentration-container.inactive {
   background: transparent;
   border: 1px solid #ccc;
-}
+} */
 
 .concentration-switch {
   width: 40px;
@@ -28,11 +28,11 @@
 }
 
 .concentration-switch.active {
-  background: #4caf50;
+  background: #d5a346;
 }
 
 .concentration-switch.inactive {
-  background: #f44336;
+  background: rgba(87, 79, 74, 0.7);
 }
 
 .switch-slider {

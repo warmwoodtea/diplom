@@ -1,5 +1,6 @@
 import { Toggle } from "../../components";
 import { CellsHolder } from "./components";
+import styles from "./styles.module.css";
 
 export const BattlePage = () => {
   const handleToggle = (isActive: boolean, spellName: string) => {
@@ -7,7 +8,8 @@ export const BattlePage = () => {
   };
 
   return (
-    <div className="page">
+    <div className={styles.page}>
+      <div className={styles.title}>Battle Page</div>
       <h1>Concentration</h1>
 
       <div className="spells-list">

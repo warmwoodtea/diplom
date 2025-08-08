@@ -11,7 +11,7 @@ export const MainPage = () => {
 
   return (
     <div className={styles.holder}>
-      <div>{translate("main-page.title")}</div>
+      <div className={styles.title}>{translate("main-page.title")}</div>
       <div className={styles.selectors}>
         <ServerSpells />
         <SelectedSpells />

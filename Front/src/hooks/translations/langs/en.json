@@ -1,5 +1,6 @@
 {
-  "main-page.title": "Main Page",
+  "main-page.title": "Spell Book",
+  "main-page.title2": "Battle Page",
   "main-page.loading": "Loading",
   "server-spells.remove": "Remove",
   "server-spells.add": "Add",
@@ -22,6 +23,10 @@
   "choose-levels.remove-level": "Remove level",
   "choose-levels.level": "Level",
   "cast-table.row": "Slot",
-  "cast-table.yes": "Yes",
-  "cast-table.no": "No"
+  "cast-table.yes": "Ready",
+  "cast-table.no": "No",
+  "cast-table.add-cell": "+",
+  "cast-table.remove-cell": "-",
+  "cast-table.add-row": "+",
+  "cast-table.remove-row": "-"
 }

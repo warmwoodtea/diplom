@@ -1,10 +1,29 @@
 .table {
   width: 100%;
   border-collapse: collapse;
+  color: #fae8c9;
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.025em;
+  margin: 0;
+  text-shadow:
+    0 0 5px #8f7e43,
+    0 0 10px #f2d675,
+    0 0 20px #ff9d00,
+    0 0 30px #ff9d00;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.tableHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
 .table th,
 .table td {
-  border: 1px solid #ddd;
+  /*border: 1px solid #f2d675;*/
   padding: 10px;
 }

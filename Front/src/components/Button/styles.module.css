@@ -1,6 +1,14 @@
-.aboba {
-  background: red;
-  color: white;
+.butt {
+  background: rgba(87, 79, 74, 0.9);
+  color: #fae8c9;
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.025em;
+  margin: 0;
+  text-shadow:
+    0 0 5px #8f7e43,
+    0 0 10px #f2d675,
+    0 0 20px #ff9d00,
+    0 0 30px #ff9d00;
   padding: 10px 20px;
   border-radius: 5px;
 }

@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 import { CastTable } from "../CastTable";
-import { ChooseLevels } from "../ChooseLevels";
 import type { LevelSpell } from "../types";
 
 export const CellsHolder = () => {
@@ -9,8 +8,7 @@ export const CellsHolder = () => {
 
   return (
     <div>
-      <ChooseLevels state={state} setState={setState} />
-      <CastTable state={state} />
+      <CastTable state={state} setState={setState} />
     </div>
   );
 };
